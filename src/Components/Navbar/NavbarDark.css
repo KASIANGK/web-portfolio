@@ -1,0 +1,18 @@
+.navbar.dark-mode {
+    background-color: black;
+    z-index: 1;
+}
+.navbar-container.dark-mode {
+    background-color: #333333;
+    color: #ffffff;
+  }
+  
+  .navbar-container.dark-mode .nav-links a,
+  .navbar-container.dark-mode .dark-mode-btn {
+    color: #ffffff;
+  }
+
+  .nav-links .active a {
+    color: #ff9900; 
+  }
+  

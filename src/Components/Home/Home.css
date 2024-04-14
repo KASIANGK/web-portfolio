@@ -1,0 +1,11 @@
+.home {
+    width: 100vw;
+    height: fit-content;
+    background-color: aliceblue;
+}
+.content {
+    background-color: aliceblue;
+}
+.content video {
+    width: 100%;
+}
