@@ -11,7 +11,9 @@
   .navbar-container.dark-mode .dark-mode-btn {
     color: #ffffff;
   }
-
+  .navbar-container.dark-mode ul {
+    background-color: black;
+  }
   .nav-links .active a {
     color: #ff9900; 
   }

@@ -1,10 +1,12 @@
+.navbar-container {
+    background-color: rgb(228, 228, 228);
+    width: 100vw;
+}
 .nav li {
     width: 20px;
 }
 .logo-container {
     width: 100px;
-    /* padding-top: 2%;
-    padding-bottom: 1%; */
     display: flex;
     overflow: hidden;
     height: 60px;
@@ -19,7 +21,7 @@
     display: flex;
     justify-content: space-between; 
     align-items: center; 
-    background-color: rgb(222, 220, 220); 
+    background-color: rgb(228, 228, 228); 
     flex-wrap: wrap;
     width: 100%; 
     overflow-x: hidden;
@@ -36,8 +38,9 @@
     gap: 50px;
     margin: 0;
 }
-.nav-links ul {
+.navbar-container ul {
     width: 100%;
+    background-color: rgb(228, 228, 228);
 }
 
 .nav-links li {
@@ -58,9 +61,7 @@
     font-weight: bolder; 
     color: rgb(255, 187, 0); 
 }
-.navbar-container {
-    width: 100vw;
-}
+
 
 
 @media only screen and (max-width: 425px) {

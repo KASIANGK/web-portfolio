@@ -1,3 +1,13 @@
+.home.dark {
+    background-color: black;
+}
 .content.dark {
     background-color: black;
+}
+.presentation.dark {
+    background-color: black;
+}
+.presentation-txt.dark {
+    background-color: black;
+    color: aliceblue;
 }

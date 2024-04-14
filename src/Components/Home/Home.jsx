@@ -129,8 +129,8 @@ import { useSelector } from 'react-redux';
 import Navbar from '../Navbar/Navbar';
 import './Home.css';
 import './HomeDark.css';
-import darkVideo from '../../assets/Home/videodark.mp4';
-import lightVideo from '../../assets/Home/video.mp4';
+import darkVideo from '../../assets/Home/Automatic.mp4';
+import lightVideo from '../../assets/Home/light.mp4';
 
 const Home = () => {
   const darkMode = useSelector(state => state.dark.darkMode);
@@ -201,6 +201,14 @@ const Home = () => {
         ) : (
           <video ref={lightVideoRef} src={lightVideo} autoPlay loop muted preload="auto" />
         )}
+      </div>
+      <div className={`presentation ${darkMode ? 'dark' : ''}`}>
+          <div className={`presentation-txt ${darkMode ? 'dark' : ''}`}>
+            <p>Hello! Je suis Kasia - Web Developer passionné et un créatif visuel intrépide.</p>
+            <p>Avec une expérience solide en tant que graphiste, je jongle avec les pixels et les lignes de code pour créer des expériences en ligne mémorables. </p>
+            <p>De Photoshop à Blender, je m'aventure dans toutes les dimensions du design pour donner vie à des projets uniques et captivants.</p> 
+            <p>Explorez mon univers en cliquant ci-dessous pour en savoir plus !</p>
+          </div>
       </div>
     </div>
   );

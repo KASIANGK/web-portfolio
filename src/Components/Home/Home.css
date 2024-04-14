@@ -1,11 +1,22 @@
 .home {
     width: 100vw;
     height: fit-content;
-    background-color: aliceblue;
+    background-color: rgb(236, 236, 236);
 }
 .content {
-    background-color: aliceblue;
+    background-color: rgb(236, 236, 236);
 }
 .content video {
     width: 100%;
+}
+.presentation {
+    width: 100%;
+    background-color: rgb(236, 236, 236);
+    padding-bottom: 15%;
+
+}
+.presentation-txt {
+    width: 100%;
+    background-color: rgb(236, 236, 236);
+    color: black;
 }
