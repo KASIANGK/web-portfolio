@@ -67,11 +67,11 @@ function Navbar() {
   const dispatch = useDispatch();
   const darkMode = useSelector((state) => state.dark.darkMode);
 
-  const [selectedLanguage, setSelectedLanguage] = useState('en'); // État pour la langue sélectionnée
+  const [selectedLanguage, setSelectedLanguage] = useState('en'); 
 
   const handleLanguageChange = (lang) => {
     setSelectedLanguage(lang);
-    // Ajoutez ici la logique pour changer la langue dans votre application
+
   };
 
   const handleDarkModeToggle = () => {
@@ -81,7 +81,6 @@ function Navbar() {
   const languages = [
     { code: 'en', name: 'English' },
     { code: 'fr', name: 'French' },
-    // Ajoutez d'autres langues au besoin
   ];
 
   return (
@@ -93,14 +92,13 @@ function Navbar() {
             <li className={location.pathname === '/' ? 'active' : ''}>
               <Link to="/">HOME</Link>
             </li>
-            <li className={location.pathname === '/menus' ? 'active' : ''}>
-              <Link to="/menus">PORTFOLIO</Link>
+            <li className={location.pathname === '/portfolio' ? 'active' : ''}>
+              <Link to="/portfolio">PORTFOLIO</Link>
             </li>
             <li className={location.pathname === '/burgers' ? 'active' : ''}>
               <Link to="/burgers">ABOUT</Link>
             </li>
 
-            {/* Dropdown pour changer de langue */}
             <li>
               <LanguageDropdown
                 languages={languages}
@@ -109,7 +107,6 @@ function Navbar() {
               />
             </li>
 
-            {/* Bouton Dark Mode */}
             <li>
               <button className="dark-mode-btn" onClick={handleDarkModeToggle}>
                 {darkMode ? 'Light Mode' : 'Dark Mode'}
